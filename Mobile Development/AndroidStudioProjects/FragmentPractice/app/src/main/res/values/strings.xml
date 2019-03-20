@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">FragmentPractice</string>
+    <string name="change_text">Change Text</string>
+    <string name="fragment_two">Fragment Two</string>
+    <string name="flip">Go Back</string>
+    <string name="adios">Leave</string>
+</resources>
