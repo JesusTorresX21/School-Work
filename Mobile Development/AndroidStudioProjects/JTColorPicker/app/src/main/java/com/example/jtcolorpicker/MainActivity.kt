@@ -92,22 +92,6 @@ class MainActivity : AppCompatActivity(){
             colorName = namer.text.toString()
             val newColorState = object : ColorState(colorName, redBar.progress, greenBar.progress, blueBar.progress){}
             colorKey.add(newColorState)
-//            redSave?: return@setOnClickListener with (redSave.edit()){
-//                putInt(colorName, newColorState.redValue)
-//                commit()
-//            }
-//            greenSave?: return@setOnClickListener with (greenSave.edit()){
-//                putInt(colorName, newColorState.greenValue)
-//                commit()
-//            }
-//            blueSave?: return@setOnClickListener with (blueSave.edit()){
-//                putInt(colorName, newColorState.blueValue)
-//                commit()
-//            }
-//            redSave.edit().putInt(colorName, redBar.progress)
-//            greenSave.edit().putInt(colorName, greenBar.progress)
-//            blueSave.edit().putInt(colorName, blueBar.progress)
-
         }
 
         loadButt.setOnClickListener {
