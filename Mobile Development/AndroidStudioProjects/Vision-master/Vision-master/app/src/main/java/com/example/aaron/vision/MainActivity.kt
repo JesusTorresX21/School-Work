@@ -311,7 +311,7 @@ class MainActivity : AppCompatActivity() {
         private const val GALLERY = 7734
         private const val IMAGE_KEY = "TheImage"
         private const val GOAL_SIZE = 400       //good image width size for quick response from Google
-        private const val API_KEY = "AIzaSyAPz3JL8GmNbVFTlfl1_aQWyfQFGOcEUzA"//your API Key should be placed here
+        private const val API_KEY = ""//your API Key should be placed here
     }
 
     private fun colorBackground(){
