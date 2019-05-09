@@ -52,8 +52,8 @@ class MainActivity : AppCompatActivity() {
             setDescription("Time to show result ...")
             GVisionThread().execute()   //talk to Google Vision in another Thread
             val colorArray = this.resources.getStringArray((R.array.colors))
-            var layout = findViewById<View>(R.id.mainlayout)
-            var colorVal = 0
+            val layout = findViewById<View>(R.id.mainlayout)
+            var colorVal: Int
             for(col in gDescription) {
                 Log.i("CHECK", col)
                 for (i in colorArray){
@@ -63,7 +63,8 @@ class MainActivity : AppCompatActivity() {
                         break
                     }
                 }
-            }        }
+            }
+        }
 
         //restore image if there is one (use after a device rotation)
         if (savedInstanceState != null && savedInstanceState[IMAGE_KEY] != null) {
@@ -312,9 +313,5 @@ class MainActivity : AppCompatActivity() {
         private const val IMAGE_KEY = "TheImage"
         private const val GOAL_SIZE = 400       //good image width size for quick response from Google
         private const val API_KEY = ""//your API Key should be placed here
-    }
-
-    private fun colorBackground(){
-
     }
 }
